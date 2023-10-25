@@ -1,0 +1,623 @@
+@font-face {
+	font-family: 'MinionPro';
+	src:  url('../fonts/MinionPro-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+img{border:none;}
+textarea,input,button{outline:none;}
+textarea:focus, input:focus, button:focus{outline:none; border:none;}
+textarea:active, input:active, button:active{outline:none;border:none;}
+a:hover {outline: none;}
+.btn.submit:focus {
+    outline-style: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+label{margin:0px;}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'MinionPro', sans-serif;
+	font-size: 20px;
+    font-weight: 400;
+}
+
+.wrap {
+	max-width:1100px;
+	min-width:320px;
+	margin:0 auto;
+}
+
+.lang {
+	display:flex;
+	justify-content:flex-end;
+	margin-bottom:10px;
+}
+
+.lang .item {
+	display:flex;
+	align-items:center;
+	background:#EDF3FA;
+	padding:5px;
+	margin:5px;
+	border:1px solid transparent;
+	color:#797979;
+	cursor:pointer;
+}
+
+.lang .item p{
+	margin-left:10px;
+	font-size:18px;
+	line-height:18px;
+	font-weight:600;
+}
+
+.lang .item img{
+	display:block;
+	width:18px;
+	height:12px;
+}
+
+.lang .item.active{
+	border:1px solid #EADBD7;
+	box-shadow:0 0 3px 1px #EADBD7 inset;
+	color:#000;
+}
+
+/* === */
+
+.header {
+	display:flex;
+	margin-bottom:35px;
+	padding:0 10px;
+}
+
+.header .logo{
+	width:30%;
+}
+
+.header .logo img{
+	display:block;
+	width:75%;
+}
+
+.header .icons{
+	width:70%;
+	margin-left:50px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	background: url(../img/bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.header .icons .title {
+	font-size:36px;
+	letter-spacing:2px;
+	color:#fff;
+	font-weight:900;
+	text-align:center;
+	text-shadow:0 0 1px #000, 0 0 5px #000, 0 0 10px #000;
+}
+
+.header .icons .list{
+	display:flex;
+	justify-content:space-around;
+}
+
+.header .icons .list span{
+	width:60px;
+}
+
+.header .icons .list img{
+	width:100%;
+}
+
+.about {
+	letter-spacing:1px;
+	text-align:justify;
+	margin-bottom:35px;
+	padding:0 10px;
+}
+
+.brands .item {
+	display:flex;
+	align-items:center;
+	margin-bottom:25px;
+	padding:0 10px;
+}
+
+.brands .item .text .goods{
+	display:flex;
+	align-items: flex-end;
+	justify-content:center;
+}
+.brands .item .text .goods img{
+	display:block;
+	margin:5px 5px 0 5px;
+	max-height:125px;
+}
+.brands .item .text .goods img.width{
+	max-width:130px;
+}
+
+.brands .item .logo{
+	width:25%;
+	display:block;
+}
+
+.brands .item .logo {
+	font-size:45px;
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+}
+
+.brands .item .text{
+	width:75%;
+	padding:10px 5px;
+	margin-left:15px;
+	text-align:right
+}
+
+.brands .item .text p{
+	text-align:center;
+	color:#62472E;
+	font-size:26px;
+	font-weight:600;
+}
+
+.brands .item .text span{
+	text-align:center;
+	display:block;
+	color:#514439;
+}
+
+.brands .item .text a{
+	text-align:center;
+	display:block;
+	color:#514439;
+}
+
+.load {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+	background: #FFEAE6;
+    border: 1px solid #e8c3bc;
+	padding:5px;
+	margin-bottom:20px;
+	border-radius: 5px;
+}
+
+.alert {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+	background: #EDF3FA;
+    border: 1px solid #86beff;
+	padding:5px;
+	margin-bottom:20px;
+	border-radius: 5px;
+}
+
+.label {
+	display:block;
+	text-decoration:none;
+	color:#000;
+	font-size:14px;
+	font-weight:600;
+	text-align:center;
+	background: #EDF3FA;
+	padding:5px;
+}
+
+.logo {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:15px;
+}
+
+.logo .first {
+	margin-right:30px;
+}
+
+.logo .second {
+	width:18%;
+    font-size: 44px;
+}
+
+.logo img{
+	width:120px;
+}
+
+.brand-title {
+	text-transform:uppercase;
+    font-size: 26px;
+    font-weight: 900;
+    background: #FFEAE6;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.goods .item {
+	display:flex;
+	margin-bottom:25px;
+}
+
+.goods .item .img{
+	width:27%;
+	padding:8px;
+}
+
+.goods .item .img img{
+	display:block;
+	margin:0 auto;
+	max-height:260px;
+}
+
+.goods .item .width img{
+	width:100%;
+	max-height: inherit;
+}
+
+.goods .item .text{
+	width:73%;
+	padding:8px;
+}
+
+.goods .item .text p{
+	color:#2F2520;
+	margin-bottom:10px;
+	text-align:justify;
+}
+
+.goods .item .text .top,
+.goods .item .text p span{
+	font-weight:600;
+	color:#000;
+}
+
+.goods .item .text .title{
+	color:#281C17;
+	text-align:center;
+	font-weight:600;
+}
+.goods .item .text .ingridient {
+	color:#000;
+	font-size:15px;
+	display:none;
+}
+.goods .item .text .btn {
+	cursor:pointer;
+	display:block;
+	width:90px;
+	text-align:center;
+	padding:5px 0;
+	background:#FFEAE6;
+	border:1px solid #e8c3bc;
+	border-radius:5px;
+	margin-bottom:10px;
+}
+
+
+
+/* **** */
+
+
+.spicyblondie-bg{
+	background:#FD1F99;
+}
+
+.spicyblondie{
+	color:#FD1F99;
+}
+
+.balancy{
+	color:#E46C0A;
+}
+.balancy-bg{
+	background:#E46C0A;
+}
+
+/**/
+
+.daily {
+	color:#00B050;
+}
+.daily-bg{
+	background:#00B050;
+}
+
+/**/
+
+.energy{
+	color:#FF1616;
+}
+.energy-bg{
+	background:#FF1616;
+}
+
+/**/
+
+.healthy{
+	color:#832362;
+}
+.healthy-bg{
+	background:#832362;
+}
+
+/**/
+
+.purify {
+	color:#00B0F0;
+}
+.purify-bg{
+	background:#00B0F0;
+}
+
+/**/
+
+.serenity{
+	color:#953735;
+}
+.serenity-bg{
+	background:#953735;
+}
+
+/**/
+
+.silky{
+	color:#53321D;
+}
+.silky-bg{
+	background:#53321D;
+}
+
+/**/
+
+.spicy{
+	color:#676767;
+}
+.spicy-bg{
+	background:#676767;
+}
+.spicy-rx{
+	background:#EAA249;
+}
+.spicy-sp{
+	background:#BB2649;
+}
+
+
+
+/* **** */
+
+.ru-js {
+	display:none;
+}
+
+
+@media only screen and (max-width:960px){
+	.load {
+		margin:0 10px 20px 10px;
+	}
+	
+	.alert {
+		margin:0 10px 20px 10px;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.load {
+		font-size: 14px;
+	}
+	.alert {
+		font-size: 14px;
+	}
+	.logo {
+		flex-direction: column;
+	}
+	.brands .item .logo {
+		font-size: 37px;
+	}
+	.logo .first {
+		margin-right: 0;
+	}
+	.logo .second {
+		width: 100%;
+		text-align:center;
+		margin-top: 0;
+	}
+	
+	.header {
+		flex-wrap: wrap;
+	}
+	.header .logo {
+		width: 100%;
+	}
+	.header .logo img {
+		display: block;
+		width: 220px;
+		margin:0 auto;
+	}
+	.header .icons {
+		width: 100%;
+		margin: 0;
+		padding:40px 0;
+	}
+	.header .icons .title {
+		font-size: 24px;
+		letter-spacing: 1px;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.header {
+		margin-bottom: 15px;
+	}
+	.about {
+		margin-bottom: 15px;
+	}
+	.brands .item .text p {
+		font-size: 20px;
+	}
+	.brands .item .text span {
+		font-size: 18px;
+	}
+	.brands .item .text {
+		padding: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	.brands .item {
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+		padding-bottom:5px;
+	}
+	.brands .item:last-child {
+		border-bottom:none;
+	}
+	.brands .item .logo {
+		width: 100%;
+	}
+	.brands .item .logo img {
+		width: 250px;
+		display: block;
+		margin:0 auto;
+	}
+	.brand-title {
+		font-size: 20px;
+	}
+	.goods .item .text p{
+		font-size:17px;
+	}
+	
+	.goods .item {
+		margin-bottom:15px;
+	}
+	
+	.goods .item{
+		flex-wrap:wrap;
+	}
+	.goods .item .img{
+		width:100%;
+		padding:8px;
+	}
+
+	.goods .item .width img{
+		width:60%;
+	}
+
+	.goods .item .width.fix img{
+		width:auto;
+		max-height:260px;
+	}
+	
+	.goods .item .text{
+		width:100%;
+		padding:8px;
+	}
+	
+	.goods .item {
+		margin-bottom:5px;
+	}
+
+}
+
+@media only screen and (max-width:600px){
+	.goods .item .width img{
+		width:85%;
+	}
+	
+	.logo .title {
+		font-size: 25px;
+	}
+
+	.brand-title {
+		font-size: 18px;
+	}
+	
+	.goods .item .text p{
+		font-size:15px;
+	}
+	.goods .item .text .ingridient {
+		font-size: 13px;
+	}
+	.brands .item .text p {
+		font-size: 18px;
+	}
+	.brands .item .text span {
+		font-size: 16px;
+	}
+	
+}
+
+@media only screen and (max-width:400px){
+
+	.brand-title {
+		font-size: 15px;
+	}
+	.brands .item .text .goods img {
+		display: block;
+		margin: 5px 3px 0 3px;
+		max-height: 100px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
